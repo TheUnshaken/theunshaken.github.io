@@ -61,6 +61,17 @@
       transform: scale(1.03);
     }
 
+    .section {
+      margin-top: 70px;
+    }
+
+    .album-img {
+      width: 260px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      margin-bottom: 20px;
+    }
+
     .footer {
       margin-top: 65px;
       font-size: 0.9em;
@@ -72,31 +83,35 @@
 
 <body>
   <div class="container">
+
     <h1>The Unshaken</h1>
     <p>Stories carved in sound. Songs that stay with you.</p>
 
     <a class="button" href="https://youtube.com">🎬 Watch on YouTube</a>
     <a class="button" href="https://spotify.com">🎧 Listen on Spotify</a>
     <a class="button" href="https://beacons.ai/theunshaken">🔗 All Links</a>
-<div style="margin-top:60px;">
-  <h2 style="font-weight: normal; margin-bottom: 20px;">Start Here</h2>
 
-  <img src="https://via.placeholder.com/300x300" 
-       alt="The Old River Sessions"
-       style="width:260px; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.4); margin-bottom:20px;">
+    <!-- 🎸 START HERE SECTION -->
+    <div class="section">
+      <h2 style="font-weight: normal;">Start Here</h2>
 
-  <p style="max-width:500px; margin:0 auto 20px; font-size:1em;">
-    The Old River Sessions — a quiet front porch, a worn guitar, and stories carried on the current.
-  </p>
+      <img class="album-img"
+        src="https://via.placeholder.com/300x300"
+        alt="The Old River Sessions">
 
-  <a class="button" href="https://youtube.com" target="_blank">
-    ▶ Start Listening
-  </a>
-</div>
-    
+      <p style="max-width:500px; margin:0 auto 20px;">
+        The Old River Sessions — a quiet front porch, a worn guitar, and stories carried on the current.
+      </p>
+
+      <a class="button" href="https://youtube.com">
+        ▶ Start Listening
+      </a>
+    </div>
+
     <div class="footer">
       © 2026 The Unshaken
     </div>
+
   </div>
 </body>
 </html>
