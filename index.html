@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>The Unshaken</title>
 
 <style>
@@ -11,15 +10,14 @@ body {
   margin: 0;
   font-family: Georgia, serif;
   color: #f5f0e6;
-  background: linear-gradient(rgba(20,10,5,0.85), rgba(20,10,5,0.95)),
-              url('file_00000000582c71f59713450194f41dc7.png');
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(20,10,5,0.88), rgba(20,10,5,0.95));
   text-align: center;
 }
 
 .container {
   padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 h1 {
@@ -28,11 +26,23 @@ h1 {
   text-shadow: 0 2px 10px rgba(0,0,0,0.7);
 }
 
+h2 {
+  font-size: 2em;
+  margin: 60px 0 25px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
 p {
   font-size: 1.2em;
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto 30px;
   color: #ddd2c2;
+  line-height: 1.35;
 }
 
 .button {
@@ -55,23 +65,25 @@ p {
   transform: scale(1.03);
 }
 
-.section {
-  margin-top: 70px;
-}
-
-.section h2 {
-  font-size: 1.8em;
-  margin-bottom: 30px;
+.hero-image {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto 30px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
 }
 
 .path {
-  margin-bottom: 50px;
+  margin: 45px auto 0;
+  padding: 30px 20px;
   border-top: 1px solid rgba(255,255,255,0.15);
-  padding-top: 30px;
+  transition: 0.3s;
 }
 
-.path h3 {
-  font-size: 1.4em;
+.path:hover {
+  background: rgba(80, 50, 30, 0.15);
+  border-radius: 10px;
 }
 
 .footer {
@@ -93,37 +105,32 @@ p {
 <a class="button" href="https://open.spotify.com/artist/7hlhX325XoeAKT9bwXxAW8?si=O_s4WIzQRI-NNBCTM4i4WQ" target="_blank">🎧 Listen on Spotify</a>
 <a class="button" href="https://beacons.ai/theunshaken" target="_blank">🔗 All Links</a>
 
-<div class="section">
-  <h2>Begin the Journey</h2>
+<h2>Begin the Journey</h2>
 
-  <img src="file_00000000582c71f59713450194f41dc7.png" style="width:90%; max-width:400px; border-radius:16px;">
+<img class="hero-image" src="file_00000000582c71f59713450194f41dc7.png" alt="The Old River Sessions">
 
-  <p>The Old River Sessions — a quiet front porch, a worn guitar, and stories carried on the current.</p>
+<p>The Old River Sessions — a quiet front porch, a worn guitar, and stories carried on the current.</p>
 
-  <a class="button" href="https://youtu.be/N96CrpiNRNw?si=L0vsWibEorWafWxi" target="_blank">▶ Start Listening</a>
+<a class="button" href="https://youtu.be/N96CrpiNRNw?si=L0vsWibEorWafWxi" target="_blank">▶ Start Listening</a>
+
+<h2>Or follow a different road...</h2>
+
+<div class="path">
+  <h3>The Porch</h3>
+  <p>Rooted, reflective, and built on story.</p>
+  <a class="button" href="porch.html">Sit a While</a>
 </div>
 
-<div class="section">
-  <h2>Or follow a different road...</h2>
+<div class="path">
+  <h3>The Pub</h3>
+  <p>Raised voices, clinking glasses, and songs that don’t sit still.</p>
+  <a class="button" href="https://youtube.com/@theunshaken2official?si=dOc63Bgmj5Kebq4Y" target="_blank">Join the Noise</a>
+</div>
 
-  <div class="path">
-    <h3>The Porch</h3>
-    <p>Rooted, reflective, and built on story.</p>
-    <a class="button" href="porch.html">Sit a While</a>
-  </div>
-
-  <div class="path">
-    <h3>The Pub</h3>
-    <p>Raised voices, clinking glasses, and songs that don’t sit still.</p>
-    <a class="button" href="https://youtube.com/@theunshaken2official?si=dOc63Bgmj5Kebq4Y" target="_blank">Join the Noise</a>
-  </div>
-
-  <div class="path">
-    <h3>The Cathedral</h3>
-    <p>Darker roads, heavier questions, and something echoing in the distance.</p>
-    <a class="button" href="https://youtube.com/@sawdustcathedral?si=fGS_D9BjGW4RodLE" target="_blank">Step Inside</a>
-  </div>
-
+<div class="path">
+  <h3>The Cathedral</h3>
+  <p>Darker roads, heavier questions, and something echoing in the distance.</p>
+  <a class="button" href="https://youtube.com/@sawdustcathedral?si=fGS_D9BjGW4RodLE" target="_blank">Step Inside</a>
 </div>
 
 <div class="footer">
