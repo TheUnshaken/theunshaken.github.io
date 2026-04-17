@@ -6,218 +6,213 @@
 <title>The Pub | The Unshaken</title>
 
 <style>
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle at 50% 20%, rgba(255,140,60,0.15), transparent 60%),
-              radial-gradient(circle at 80% 80%, rgba(255,120,40,0.08), transparent 70%);
-  pointer-events: none;
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: linear-gradient(to bottom, #140804 0%, #22100a 42%, #120603 100%);
+    color: #f6e7d7;
+    text-align: center;
+    position: relative;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 50% 14%, rgba(255, 136, 44, 0.16), transparent 34%),
+        radial-gradient(circle at 82% 78%, rgba(255, 115, 28, 0.08), transparent 28%),
+        radial-gradient(circle at 14% 82%, rgba(255, 145, 62, 0.05), transparent 24%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .container {
+    position: relative;
+    z-index: 1;
     padding: 24px 20px 60px;
     max-width: 640px;
     margin: auto;
 }
 
+.back {
+    display: inline-block;
+    margin-bottom: 18px;
+    text-decoration: none;
+    color: #dfbf9a;
+    font-size: 15px;
+    opacity: 0.95;
+}
+
 h1 {
     font-size: 42px;
-    margin: 10px 0;
+    margin: 8px 0 12px;
+    letter-spacing: 0.2px;
+    color: #fff3e6;
 }
 
 .tagline {
-    font-size: 18px;
-    opacity: 0.85;
-    margin-bottom: 30px;
+    font-size: 17px;
+    line-height: 1.45;
+    opacity: 0.9;
+    max-width: 560px;
+    margin: 0 auto 28px;
+    color: #f2dfcc;
 }
 
-.back {
-    text-decoration: none;
-    color: #d6bfa7;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-/* CARD STYLE */
 .card {
     margin-top: 30px;
-    padding: 20px;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.03);
+    padding: 22px 18px 26px;
+    border-radius: 22px;
+    background: rgba(32, 12, 7, 0.74);
+    border: 1px solid rgba(223, 191, 154, 0.12);
+    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.32);
 }
 
-/* IMAGE SIZES */
 .album-large img {
     width: 100%;
     border-radius: 20px;
+    display: block;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.42);
 }
 
 .album-small img {
     width: 80%;
+    max-width: 340px;
     border-radius: 16px;
     margin: 0 auto;
     display: block;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.36);
 }
 
-/* TEXT */
 .album-title {
     font-size: 24px;
-    margin: 15px 0 8px;
+    margin: 18px 0 10px;
+    color: #fff0e0;
 }
 
 .album-desc {
     font-size: 16px;
-    opacity: 0.9;
+    line-height: 1.45;
+    opacity: 0.92;
+    max-width: 500px;
+    margin: 0 auto 10px;
+    color: #f2dfcc;
 }
 
 .next {
     font-size: 14px;
-    opacity: 0.6;
+    opacity: 0.68;
     margin-top: 8px;
+    color: #dfbf9a;
 }
 
-/* BUTTON */
 .button {
     display: inline-block;
-    margin-top: 15px;
-    padding: 12px 18px;
-    border: 1px solid #d6bfa7;
-    border-radius: 10px;
+    margin-top: 16px;
+    padding: 12px 20px;
+    border: 1px solid #dfbf9a;
+    border-radius: 12px;
     text-decoration: none;
-    color: #f5e9dc;
-    transition: 0.25s;
+    color: #fff2e4;
+    background: rgba(255, 255, 255, 0.02);
+    transition: 0.25s ease;
 }
 
-.button:hover {
-    background: #d6bfa7;
-    color: #1a0e09;
+.button:hover,
+.button:active {
+    background: #dfbf9a;
+    color: #1a0a06;
 }
 
 .footer {
     margin-top: 50px;
     font-size: 14px;
-    opacity: 0.6;
+    opacity: 0.58;
+    color: #dfbf9a;
 }
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
 <a href="index.html" class="back">← Back to Home</a>
 
 <h1>The Pub</h1>
 <p class="tagline">
-Raised voices, clinking glasses, and songs that don’t sit still. Start loud… stay late.
+Raised voices, clinking glasses, and songs that don’t sit still. Start loud... stay late.
 </p>
 
-<!-- 1. RAISE THE ROOF (HERO) -->
 <div class="card">
     <div class="album-large">
-        <img src="raisetheroof.png">
+        <img src="raisetheroof.png" alt="Raise The Roof">
     </div>
-
     <div class="album-title">Raise The Roof</div>
     <p class="album-desc">
         High energy, full-throated, and built for the kind of night that gets louder as it goes.
     </p>
-
     <p class="next">From here → Six Pints and a Chorus</p>
-
-    <a class="button" href="https://youtu.be/f0Cv47LuzkA?si=dPQ3gwWu88aXlcBo" target="_blank">
-        🍻 Kick It Off
-    </a>
+    <a class="button" href="https://youtu.be/f0Cv47LuzkA?si=dPQ3gwWu88aXlcBo" target="_blank">🍻 Kick It Off</a>
 </div>
 
-<!-- 2. SIX PINTS -->
 <div class="card">
     <div class="album-small">
-        <img src="sixpintsandachorus.jpg">
+        <img src="sixpintsandachorus.jpg" alt="Six Pints and a Chorus">
     </div>
-
     <div class="album-title">Six Pints and a Chorus</div>
     <p class="album-desc">
         Big choruses, full glasses, and the sweet spot where singing beats talking.
     </p>
-
     <p class="next">From here → The Unbroken Pub</p>
-
-    <a class="button" href="https://youtu.be/wNPQDJ2Uw9Y?si=0GUeBPIZlG1RRjHj" target="_blank">
-        🍻 Sing Along
-    </a>
+    <a class="button" href="https://youtu.be/wNPQDJ2Uw9Y?si=0GUeBPIZlG1RRjHj" target="_blank">🍻 Sing Along</a>
 </div>
 
-<!-- 3. UNBROKEN PUB -->
 <div class="card">
     <div class="album-small">
-        <img src="theunbrokenpub.jpg">
+        <img src="theunbrokenpub.jpg" alt="The Unbroken Pub">
     </div>
-
     <div class="album-title">The Unbroken Pub</div>
     <p class="album-desc">
         A room full of characters, stories, and the kind of night you don’t plan—you just end up in.
     </p>
-
     <p class="next">From here → We Lift It Together</p>
-
-    <a class="button" href="https://youtu.be/5ve2cmyBkaQ?si=Db8qGKFJOzp1hXEC" target="_blank">
-        🍻 Join In
-    </a>
+    <a class="button" href="https://youtu.be/5ve2cmyBkaQ?si=Db8qGKFJOzp1hXEC" target="_blank">🍻 Join In</a>
 </div>
 
-<!-- 4. WE LIFT IT TOGETHER -->
 <div class="card">
     <div class="album-small">
-        <img src="weliftittogether.jpg">
+        <img src="weliftittogether.jpg" alt="We Lift It Together">
     </div>
-
     <div class="album-title">We Lift It Together</div>
     <p class="album-desc">
         Voices rising, glasses raised, and a room that feels like it’s all one heartbeat.
     </p>
-
-    <p class="next">From here → We'll Sit a Bit</p>
-
-    <a class="button" href="https://youtu.be/6rzgkAXNRxE?si=XED1ju2zEB8KV2rw" target="_blank">
-        🍻 Raise One
-    </a>
+    <p class="next">From here → We’ll Sit a Bit</p>
+    <a class="button" href="https://youtu.be/6rzgkAXNRxE?si=XED1ju2zEB8KV2rw" target="_blank">🍻 Raise One</a>
 </div>
 
-<!-- 5. WE'LL SIT A BIT -->
 <div class="card">
     <div class="album-small">
-        <img src="we'llsitabit.jpg">
+        <img src="wellsitabit.jpg" alt="We’ll Sit a Bit">
     </div>
-
     <div class="album-title">We’ll Sit a Bit</div>
     <p class="album-desc">
         Slower moments, softer stories, and the kind of quiet that only comes after the noise.
     </p>
-
     <p class="next">From here → The Laughing Pint Society</p>
-
-    <a class="button" href="https://youtu.be/rmKVvFAj3Dw?si=_55MTJsRci96muiP" target="_blank">
-        🍻 Settle In
-    </a>
+    <a class="button" href="https://youtu.be/rmKVvFAj3Dw?si=_55MTJsRci96muiP" target="_blank">🍻 Settle In</a>
 </div>
 
-<!-- 6. LAUGHING PINT SOCIETY -->
 <div class="card">
     <div class="album-small">
-        <img src="thelaughingpintsociety.png">
+        <img src="thelaughingpintsociety.png" alt="The Laughing Pint Society">
     </div>
-
     <div class="album-title">The Laughing Pint Society</div>
     <p class="album-desc">
-        A table of regulars, a round that never ends, and laughter that carries into the night.
+        A table of regulars, a round that never ends, and laughter that carries deeper into the night.
     </p>
-
-    <a class="button" href="https://youtu.be/JWdM5hhp_h4?si=MSSVnXMH58VeyaXa" target="_blank">
-        🍻 Close the Night
-    </a>
+    <a class="button" href="https://youtu.be/JWdM5hhp_h4?si=MSSVnXMH58VeyaXa" target="_blank">🍻 Close the Night</a>
 </div>
 
 <p class="footer">© 2026 The Unshaken</p>
