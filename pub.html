@@ -37,11 +37,36 @@ body::before {
 
 .back {
     display: inline-block;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     text-decoration: none;
     color: #dfbf9a;
     font-size: 15px;
     opacity: 0.95;
+}
+
+.top-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0 28px;
+}
+
+.top-links a {
+    text-decoration: none;
+    color: #dfbf9a;
+    border: 1px solid rgba(223, 191, 154, 0.35);
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 14px;
+    transition: 0.25s ease;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.top-links a:hover,
+.top-links a:active {
+    background: #dfbf9a;
+    color: #1a0a06;
 }
 
 h1 {
@@ -138,6 +163,12 @@ h1 {
 <div class="container">
 
 <a href="index.html" class="back">← Back to Home</a>
+
+<div class="top-links">
+    <a href="index.html">Home</a>
+    <a href="https://youtube.com/@theunshaken2official?si=dOc63Bgmj5Kebq4Y" target="_blank">Channel Two</a>
+    <a href="https://open.spotify.com/artist/7hlhX325XoeAKT9bwXxAW8?si=O_s4WIzQRI-NNBCTM4i4WQ" target="_blank">Spotify</a>
+</div>
 
 <h1>The Pub</h1>
 <p class="tagline">
