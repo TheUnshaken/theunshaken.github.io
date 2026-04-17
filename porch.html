@@ -47,11 +47,16 @@ h2 {
     border: 1px solid rgba(214,191,167,0.12);
     border-radius: 22px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.album:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 40px rgba(0,0,0,0.25);
 }
 
 .album img {
     width: 100%;
-    max-width: 500px;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
