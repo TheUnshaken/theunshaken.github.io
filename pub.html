@@ -9,8 +9,8 @@
 body {
     margin: 0;
     font-family: Georgia, serif;
-    background: linear-gradient(to bottom, #3a170d, #1b0d08);
-    color: #f7e8d7;
+    background: linear-gradient(to bottom, #2b160f, #1a0e09);
+    color: #f5e9dc;
     text-align: center;
 }
 
@@ -22,141 +22,203 @@ body {
 
 h1 {
     font-size: 42px;
-    margin: 8px 0 10px;
+    margin: 10px 0;
 }
 
-h2 {
-    margin-top: 46px;
-    font-size: 30px;
+.tagline {
+    font-size: 18px;
+    opacity: 0.85;
+    margin-bottom: 30px;
 }
 
-.intro {
-    font-size: 16px;
-    opacity: 0.9;
-    margin-bottom: 20px;
+.back {
+    text-decoration: none;
+    color: #d6bfa7;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-.album {
-    margin: 34px 0;
-    padding: 22px;
-    background: rgba(255,255,255,0.035);
+/* CARD STYLE */
+.card {
+    margin-top: 30px;
+    padding: 20px;
     border-radius: 20px;
+    background: rgba(255,255,255,0.03);
 }
 
-.album img {
+/* IMAGE SIZES */
+.album-large img {
     width: 100%;
     border-radius: 20px;
 }
 
+.album-small img {
+    width: 80%;
+    border-radius: 16px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* TEXT */
 .album-title {
     font-size: 24px;
-    margin: 16px 0 6px;
+    margin: 15px 0 8px;
 }
 
 .album-desc {
-    font-size: 15px;
+    font-size: 16px;
     opacity: 0.9;
-    margin-bottom: 10px;
 }
 
-.flow {
-    font-size: 13px;
-    opacity: 0.65;
-    margin-bottom: 14px;
+.next {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: 8px;
 }
 
+/* BUTTON */
 .button {
     display: inline-block;
-    padding: 12px 25px;
-    border: 1px solid #e3c19a;
+    margin-top: 15px;
+    padding: 12px 18px;
+    border: 1px solid #d6bfa7;
     border-radius: 10px;
     text-decoration: none;
-    color: #f7e8d7;
+    color: #f5e9dc;
+    transition: 0.25s;
 }
 
 .button:hover {
-    background: #e3c19a;
-    color: #1b0d08;
-}
-
-.back {
-    display: inline-block;
-    margin-bottom: 14px;
-    text-decoration: none;
-    color: #e3c19a;
+    background: #d6bfa7;
+    color: #1a0e09;
 }
 
 .footer {
-    margin-top: 30px;
+    margin-top: 50px;
+    font-size: 14px;
     opacity: 0.6;
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
 <a href="index.html" class="back">← Back to Home</a>
 
 <h1>The Pub</h1>
-<p class="intro">Raised voices, clinking glasses, and songs that don’t sit still. Start loud… stay late.</p>
+<p class="tagline">
+Raised voices, clinking glasses, and songs that don’t sit still. Start loud… stay late.
+</p>
 
-<!-- Raise The Roof -->
-<div class="album">
-    <img src="raisetheroof.png">
+<!-- 1. RAISE THE ROOF (HERO) -->
+<div class="card">
+    <div class="album-large">
+        <img src="raisetheroof.png">
+    </div>
+
     <div class="album-title">Raise The Roof</div>
-    <div class="album-desc">High energy, full-throated, and built for the kind of night that gets louder as it goes.</div>
-    <div class="flow">From here → Six Pints and a Chorus</div>
-    <a class="button" href="https://youtu.be/f0Cv47LuzkA?si=dPQ3gwWu88aXlcBo" target="_blank">🍻 Kick It Off</a>
+    <p class="album-desc">
+        High energy, full-throated, and built for the kind of night that gets louder as it goes.
+    </p>
+
+    <p class="next">From here → Six Pints and a Chorus</p>
+
+    <a class="button" href="https://youtu.be/f0Cv47LuzkA?si=dPQ3gwWu88aXlcBo" target="_blank">
+        🍻 Kick It Off
+    </a>
 </div>
 
-<!-- Six Pints -->
-<div class="album">
-    <img src="sixpintsandachorus.jpg">
+<!-- 2. SIX PINTS -->
+<div class="card">
+    <div class="album-small">
+        <img src="sixpintsandachorus.jpg">
+    </div>
+
     <div class="album-title">Six Pints and a Chorus</div>
-    <div class="album-desc">Big choruses, full glasses, and the sweet spot where singing beats talking.</div>
-    <div class="flow">From here → The Unbroken Pub</div>
-    <a class="button" href="https://youtu.be/wNPQDJ2Uw9Y?si=0GUeBPIZlG1RRjHj" target="_blank">🍺 Raise a Glass</a>
+    <p class="album-desc">
+        Big choruses, full glasses, and the sweet spot where singing beats talking.
+    </p>
+
+    <p class="next">From here → The Unbroken Pub</p>
+
+    <a class="button" href="https://youtu.be/wNPQDJ2Uw9Y?si=0GUeBPIZlG1RRjHj" target="_blank">
+        🍻 Sing Along
+    </a>
 </div>
 
-<!-- Unbroken Pub -->
-<div class="album">
-    <img src="theunbrokenpub.jpg">
+<!-- 3. UNBROKEN PUB -->
+<div class="card">
+    <div class="album-small">
+        <img src="theunbrokenpub.jpg">
+    </div>
+
     <div class="album-title">The Unbroken Pub</div>
-    <div class="album-desc">Characters, chaos, and the kind of place where every corner has a story.</div>
-    <div class="flow">From here → We Lift It Together</div>
-    <a class="button" href="https://youtu.be/5ve2cmyBkaQ?si=Db8qGKFJOzp1hXEC" target="_blank">🎶 Join the Room</a>
+    <p class="album-desc">
+        A room full of characters, stories, and the kind of night you don’t plan—you just end up in.
+    </p>
+
+    <p class="next">From here → We Lift It Together</p>
+
+    <a class="button" href="https://youtu.be/5ve2cmyBkaQ?si=Db8qGKFJOzp1hXEC" target="_blank">
+        🍻 Join In
+    </a>
 </div>
 
-<!-- We Lift -->
-<div class="album">
-    <img src="weliftittogether.jpg">
+<!-- 4. WE LIFT IT TOGETHER -->
+<div class="card">
+    <div class="album-small">
+        <img src="weliftittogether.jpg">
+    </div>
+
     <div class="album-title">We Lift It Together</div>
-    <div class="album-desc">Arms around shoulders, voices in the air.</div>
-    <div class="flow">From here → We’ll Sit a Bit</div>
-    <a class="button" href="https://youtu.be/6rzgkAXNRxE?si=XED1ju2zEB8KV2rw" target="_blank">🍀 Sing Along</a>
+    <p class="album-desc">
+        Voices rising, glasses raised, and a room that feels like it’s all one heartbeat.
+    </p>
+
+    <p class="next">From here → We'll Sit a Bit</p>
+
+    <a class="button" href="https://youtu.be/6rzgkAXNRxE?si=XED1ju2zEB8KV2rw" target="_blank">
+        🍻 Raise One
+    </a>
 </div>
 
-<!-- Sit a Bit -->
-<div class="album">
-    <img src="wellsitabit.jpg">
+<!-- 5. WE'LL SIT A BIT -->
+<div class="card">
+    <div class="album-small">
+        <img src="we'llsitabit.jpg">
+    </div>
+
     <div class="album-title">We’ll Sit a Bit</div>
-    <div class="album-desc">The night slows down… conversations linger.</div>
-    <div class="flow">From here → The Laughing Pint Society</div>
-    <a class="button" href="https://youtu.be/rmKVvFAj3Dw?si=_55MTJsRci96muiP" target="_blank">🪑 Stay a While</a>
+    <p class="album-desc">
+        Slower moments, softer stories, and the kind of quiet that only comes after the noise.
+    </p>
+
+    <p class="next">From here → The Laughing Pint Society</p>
+
+    <a class="button" href="https://youtu.be/rmKVvFAj3Dw?si=_55MTJsRci96muiP" target="_blank">
+        🍻 Settle In
+    </a>
 </div>
 
-<!-- Laughing Pint -->
-<div class="album">
-    <img src="thelaughingpintsociety.png">
+<!-- 6. LAUGHING PINT SOCIETY -->
+<div class="card">
+    <div class="album-small">
+        <img src="thelaughingpintsociety.png">
+    </div>
+
     <div class="album-title">The Laughing Pint Society</div>
-    <div class="album-desc">The last table still talking… where the best stories get told.</div>
-    <a class="button" href="https://youtu.be/JWdM5hhp_h4?si=MSSVnXMH58VeyaXa" target="_blank">🌙 Close the Night</a>
+    <p class="album-desc">
+        A table of regulars, a round that never ends, and laughter that carries into the night.
+    </p>
+
+    <a class="button" href="https://youtu.be/JWdM5hhp_h4?si=MSSVnXMH58VeyaXa" target="_blank">
+        🍻 Close the Night
+    </a>
 </div>
 
-<div class="footer">
-© 2026 The Unshaken
-</div>
+<p class="footer">© 2026 The Unshaken</p>
 
 </div>
 </body>
