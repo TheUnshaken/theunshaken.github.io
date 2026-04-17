@@ -41,7 +41,6 @@ body::before {
     text-decoration: none;
     color: #b8a8a0;
     font-size: 15px;
-    opacity: 0.95;
 }
 
 .top-links {
@@ -55,24 +54,15 @@ body::before {
 .top-links a {
     text-decoration: none;
     color: #b8a8a0;
-    border: 1px solid rgba(184, 168, 160, 0.3);
+    border: 1px solid rgba(184,168,160,0.3);
     border-radius: 999px;
     padding: 8px 14px;
     font-size: 14px;
-    transition: 0.25s ease;
-    background: rgba(255, 255, 255, 0.015);
-}
-
-.top-links a:hover,
-.top-links a:active {
-    background: #b8a8a0;
-    color: #120c10;
 }
 
 h1 {
     font-size: 42px;
     margin: 8px 0 12px;
-    letter-spacing: 0.2px;
     color: #f3ece7;
 }
 
@@ -82,38 +72,31 @@ h1 {
     opacity: 0.9;
     max-width: 560px;
     margin: 0 auto 28px;
-    color: #d8cdc5;
 }
 
 .card {
     margin-top: 30px;
-    padding: 22px 18px 26px;
+    padding: 22px;
     border-radius: 22px;
-    background: rgba(18, 12, 16, 0.82);
-    border: 1px solid rgba(184, 168, 160, 0.1);
-    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.4);
+    background: rgba(18,12,16,0.82);
 }
 
 .album-large img {
     width: 100%;
     border-radius: 20px;
-    display: block;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.45);
 }
 
 .album-small img {
     width: 80%;
     max-width: 340px;
     border-radius: 16px;
-    margin: 0 auto;
+    margin: auto;
     display: block;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.38);
 }
 
 .album-title {
     font-size: 24px;
     margin: 18px 0 10px;
-    color: #f1e7e0;
 }
 
 .album-desc {
@@ -121,15 +104,13 @@ h1 {
     line-height: 1.5;
     opacity: 0.92;
     max-width: 500px;
-    margin: 0 auto 10px;
-    color: #d8cdc5;
+    margin: auto;
 }
 
 .next {
     font-size: 14px;
-    opacity: 0.68;
+    opacity: 0.65;
     margin-top: 8px;
-    color: #b8a8a0;
 }
 
 .button {
@@ -139,13 +120,10 @@ h1 {
     border: 1px solid #b8a8a0;
     border-radius: 12px;
     text-decoration: none;
-    color: #f3ece7;
-    background: rgba(255, 255, 255, 0.02);
-    transition: 0.25s ease;
+    color: #ece3dc;
 }
 
-.button:hover,
-.button:active {
+.button:hover {
     background: #b8a8a0;
     color: #120c10;
 }
@@ -153,15 +131,13 @@ h1 {
 .footer {
     margin-top: 50px;
     font-size: 14px;
-    opacity: 0.58;
-    color: #b8a8a0;
+    opacity: 0.6;
 }
 
 .whisper {
     margin-top: 18px;
     font-size: 14px;
-    color: #b8a8a0;
-    opacity: 0.72;
+    opacity: 0.7;
     font-style: italic;
 }
 </style>
@@ -175,59 +151,63 @@ h1 {
 <div class="top-links">
     <a href="index.html">Home</a>
     <a href="https://youtube.com/@sawdustcathedral?si=fGS_D9BjGW4RodLE" target="_blank">Cathedral</a>
-    <a href="https://open.spotify.com/artist/7hlhX325XoeAKT9bwXxAW8?si=O_s4WIzQRI-NNBCTM4i4WQ" target="_blank">Spotify</a>
+    <a href="https://open.spotify.com/artist/7hlhX325XoeAKT9bwXxAW8" target="_blank">Spotify</a>
 </div>
 
 <h1>The Cathedral</h1>
 <p class="tagline">
-Darker roads, heavier questions, and something echoing in the distance. This is the deeper room — shadow, consequence, and stories that don’t leave quietly.
+Darker roads, heavier questions, and something echoing in the distance.
 </p>
 
+<!-- 1. GREASEPAINT (START) -->
 <div class="card">
     <div class="album-large">
-        <img src="thethingimbecoming.png" alt="The Thing I'm Becoming">
+        <img src="greasepaint&smoke.jpg">
     </div>
-    <div class="album-title">The Thing I'm Becoming</div>
+    <div class="album-title">Greasepaint & Smoke</div>
     <p class="album-desc">
-        The door swings shut behind you. This is the descent — honest, unsettling, and impossible to half-hear.
+        The mask goes on first. The performance always begins before the truth shows itself.
     </p>
-    <p class="next">From here → Rust &amp; Confetti</p>
-    <a class="button" href="https://youtu.be/NGI4H_oOIIQ?si=iFAbouCBWg8wO80h" target="_blank">🕯️ Enter the Dark</a>
-</div>
-
-<div class="card">
-    <div class="album-small">
-        <img src="rust&confetti.png" alt="Rust & Confetti">
-    </div>
-    <div class="album-title">Rust &amp; Confetti</div>
-    <p class="album-desc">
-        Beauty and decay in the same breath — worn velvet, broken shine, and the ache after the performance.
-    </p>
-    <p class="next">From here → Greasepaint &amp; Smoke</p>
-    <a class="button" href="https://youtu.be/bODTvMzt2IQ?si=TPS_oR8vMmMYRlaL" target="_blank">🎭 Follow the Ashes</a>
-</div>
-
-<div class="card">
-    <div class="album-small">
-        <img src="greasepaint&smoke.jpg" alt="Greasepaint & Smoke">
-    </div>
-    <div class="album-title">Greasepaint &amp; Smoke</div>
-    <p class="album-desc">
-        Masks, flicker, and the strange ache of being seen at the wrong moment under the wrong light.
-    </p>
-    <p class="next">From here → After the Applause</p>
+    <p class="next">From here → Rust & Confetti</p>
     <a class="button" href="https://youtu.be/HUDe4FDTPyc?si=fayQhx68SOULea3t" target="_blank">🎪 Step Behind the Curtain</a>
 </div>
 
+<!-- 2. RUST -->
 <div class="card">
     <div class="album-small">
-        <img src="aftertheapplause.png" alt="After the Applause">
+        <img src="rust&confetti.png">
+    </div>
+    <div class="album-title">Rust & Confetti</div>
+    <p class="album-desc">
+        The shine fades. What’s left behind starts to show through the cracks.
+    </p>
+    <p class="next">From here → After the Applause</p>
+    <a class="button" href="https://youtu.be/bODTvMzt2IQ?si=TPS_oR8vMmMYRlaL" target="_blank">🎭 Follow the Ashes</a>
+</div>
+
+<!-- 3. AFTER -->
+<div class="card">
+    <div class="album-small">
+        <img src="aftertheapplause.png">
     </div>
     <div class="album-title">After the Applause</div>
     <p class="album-desc">
-        When the room empties and the silence finally says what the crowd never could.
+        The room empties. The noise fades. Now there’s nowhere left to hide.
     </p>
+    <p class="next">From here → The Thing I'm Becoming</p>
     <a class="button" href="https://youtu.be/5dQmBYGnSZU?si=EwJ_mCR8WqByKGGS" target="_blank">🌑 Sit With the Silence</a>
+</div>
+
+<!-- 4. FINAL -->
+<div class="card">
+    <div class="album-small">
+        <img src="thethingimbecoming.png">
+    </div>
+    <div class="album-title">The Thing I'm Becoming</div>
+    <p class="album-desc">
+        No mask. No crowd. Just the truth—and what it’s turning into.
+    </p>
+    <a class="button" href="https://youtu.be/NGI4H_oOIIQ?si=iFAbouCBWg8wO80h" target="_blank">🕯️ Enter the Dark</a>
 </div>
 
 <p class="footer">© 2026 The Unshaken</p>
