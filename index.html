@@ -23,14 +23,12 @@ body {
 h1 {
     font-size: 44px;
     margin-bottom: 10px;
-    letter-spacing: 0.3px;
 }
 
 .tagline {
     font-size: 18px;
     opacity: 0.85;
     margin-bottom: 28px;
-    line-height: 1.45;
 }
 
 .button {
@@ -44,115 +42,41 @@ h1 {
     text-decoration: none;
     color: #f5e9dc;
     font-size: 16px;
-    transition: 0.28s ease;
-    background: rgba(255,255,255,0.02);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transition: 0.25s;
 }
 
-.button:hover,
-.button:active {
+.button:hover {
     background: #d6bfa7;
     color: #1a0e09;
-    transform: translateY(-2px);
-}
-
-.button.primary {
-    background: rgba(214,191,167,0.07);
-    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
 }
 
 .helper {
     font-size: 13px;
-    opacity: 0.62;
-    margin: -2px 0 18px;
-    letter-spacing: 0.2px;
+    opacity: 0.6;
+    margin-bottom: 16px;
 }
 
 .section-title {
     font-size: 30px;
-    margin: 52px 0 20px;
-}
-
-.feature-card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    margin-top: 20px;
-    padding: 22px 18px 26px;
-    border-radius: 24px;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(214,191,167,0.12);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
-    transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
-}
-
-.feature-card:hover,
-.feature-card:active {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 40px rgba(0,0,0,0.24);
-    background: rgba(255,255,255,0.045);
+    margin: 50px 0 20px;
 }
 
 .album img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .album-desc {
-    margin: 16px auto 0;
+    margin-top: 15px;
     font-size: 16px;
     opacity: 0.9;
-    line-height: 1.55;
-    max-width: 500px;
 }
 
-.journey-note {
-    font-size: 13px;
-    opacity: 0.62;
-    margin-top: 14px;
-    letter-spacing: 0.2px;
-}
-
-.alt-worlds {
-    margin-top: 56px;
-    padding-top: 10px;
-}
-
-.alt-world-title {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.world-card {
-    margin: 18px auto;
-    padding: 22px 18px 24px;
-    max-width: 520px;
+.card {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
     background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(214,191,167,0.12);
-    border-radius: 22px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
-    transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
-}
-
-.world-card:hover,
-.world-card:active {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 40px rgba(0,0,0,0.24);
-    background: rgba(255,255,255,0.045);
-}
-
-.world-card h3 {
-    font-size: 30px;
-    margin: 0 0 10px;
-    font-weight: normal;
-}
-
-.world-card p {
-    margin: 0 0 16px;
-    font-size: 16px;
-    line-height: 1.5;
-    opacity: 0.88;
 }
 
 .footer {
@@ -164,48 +88,51 @@ h1 {
 </head>
 
 <body>
+
 <div class="container">
 
 <h1>The Unshaken</h1>
 <p class="tagline">Stories carved in sound. Songs that stay with you.</p>
 
-<a class="button primary" href="porch.html">🚪 Step Onto the Porch</a>
+<!-- MAIN PATH -->
+<a class="button" href="porch.html">🚪 Step Onto the Porch</a>
 <p class="helper">Best experienced in order.</p>
 
-<a class="button" href="https://youtube.com/@theunshakenofficial?si=-4cx7sJOC6AU1rdp" target="_blank">🎬 Watch on YouTube</a>
-<a class="button" href="https://open.spotify.com/artist/7hlhX325XoeAKT9bwXxAW8?si=O_s4WIzQRI-NNBCTM4i4WQ" target="_blank">🎧 Listen on Spotify</a>
+<!-- SIDE DOORS -->
+<a class="button" href="https://youtube.com/@theunshaken" target="_blank">🎬 Watch on YouTube</a>
+<a class="button" href="https://open.spotify.com/artist/yourlink" target="_blank">🎧 Listen on Spotify</a>
 
+<!-- JOURNEY -->
 <h2 class="section-title">Begin the Journey</h2>
 
-<a class="feature-card" href="porch.html">
+<a href="porch.html" class="card" style="display:block; text-decoration:none; color:inherit;">
     <div class="album">
-        <img src="file_00000000582c71f59713450194f41dc7.png" alt="The Old River Sessions">
-        <p class="album-desc">
-            <strong>The Old River Sessions</strong> — a quiet front porch, a worn guitar, and stories carried on the current.
-        </p>
-        <p class="journey-note">Tap anywhere on this card to begin.</p>
+        <img src="oldriversessions.jpg">
     </div>
+
+    <p class="album-desc">
+        The Old River Sessions — a quiet front porch, a worn guitar, and stories carried on the current.
+    </p>
+
+    <p class="helper">Tap anywhere on this card to begin.</p>
 </a>
 
-<div class="alt-worlds">
-    <h2 class="alt-world-title">Or take a different road</h2>
+<!-- ALT WORLDS -->
+<h2 class="section-title">Or take a different road</h2>
 
-    <div class="world-card">
-        <h3>The Pub</h3>
-        <p>Raised voices, clinking glasses, and songs that don’t sit still.</p>
-        <a class="button" href="https://youtube.com/@theunshaken2official?si=dOc63Bgmj5Kebq4Y" target="_blank">🍻 Join the Noise</a>
-    </div>
-
-    <div class="world-card">
-        <h3>The Cathedral</h3>
-        <p>Darker roads, heavier questions, and something echoing in the distance.</p>
-        <a class="button" href="https://youtube.com/@sawdustcathedral?si=fGS_D9BjGW4RodLE" target="_blank">⛪ Step Inside</a>
-    </div>
+<div class="card">
+    <h3>The Pub</h3>
+    <p>Raised voices, clinking glasses, and songs that don’t sit still.</p>
+    <a class="button" href="pub.html">🍻 Join the Noise</a>
 </div>
 
-<div class="footer">
-© 2026 The Unshaken
+<div class="card">
+    <h3>The Cathedral</h3>
+    <p>Darker roads, heavier questions, and something echoing in the distance.</p>
+    <a class="button" href="cathedral.html">⛪ Step Inside</a>
 </div>
+
+<p class="footer">© 2026 The Unshaken</p>
 
 </div>
 </body>
