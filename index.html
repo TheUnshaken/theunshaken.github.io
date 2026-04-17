@@ -9,8 +9,8 @@
 body {
     margin: 0;
     font-family: Georgia, serif;
-    background: linear-gradient(to bottom, #2b160f, #1a0e09);
-    color: #f5e9dc;
+    background: linear-gradient(to bottom, #2a120a, #4b1f12);
+    color: #f5efe9;
     text-align: center;
 }
 
@@ -21,68 +21,63 @@ body {
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 42px;
     margin-bottom: 10px;
 }
 
 .tagline {
     font-size: 18px;
-    opacity: 0.85;
-    margin-bottom: 28px;
+    opacity: 0.9;
+    margin-bottom: 30px;
 }
 
 .button {
     display: block;
     margin: 12px auto;
     padding: 14px;
-    width: 85%;
+    width: 90%;
     max-width: 420px;
-    border: 1px solid #d6bfa7;
+    border: 1px solid #e6d3c3;
     border-radius: 12px;
     text-decoration: none;
-    color: #f5e9dc;
-    font-size: 16px;
-    transition: 0.25s;
+    color: #f5efe9;
+    font-size: 18px;
+    background: transparent;
+    transition: 0.25s ease;
 }
 
 .button:hover {
-    background: #d6bfa7;
-    color: #1a0e09;
-}
-
-.helper {
-    font-size: 13px;
-    opacity: 0.6;
-    margin-bottom: 16px;
+    background: #e6d3c3;
+    color: #2a120a;
 }
 
 .section-title {
-    font-size: 30px;
-    margin: 50px 0 20px;
+    margin-top: 50px;
+    font-size: 32px;
 }
 
-.album img {
-    width: 100%;
+.card {
+    margin-top: 20px;
+    padding: 20px;
     border-radius: 20px;
+    background: rgba(255,255,255,0.06);
 }
 
-.album-desc {
+.card img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.card p {
     margin-top: 15px;
     font-size: 16px;
     opacity: 0.9;
 }
 
-.card {
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.03);
-}
-
-.footer {
-    margin-top: 50px;
+.subtle {
     font-size: 14px;
     opacity: 0.6;
+    margin-top: 10px;
 }
 </style>
 </head>
@@ -92,48 +87,39 @@ h1 {
 <div class="container">
 
 <h1>The Unshaken</h1>
-<p class="tagline">Stories carved in sound. Songs that stay with you.</p>
 
-<!-- MAIN PATH -->
-<a class="button" href="porch.html">🚪 Step Onto the Porch</a>
-<p class="helper">Best experienced in order.</p>
+<p class="tagline">
+Stories carved in sound. Songs that stay with you.
+</p>
 
-<!-- SIDE DOORS -->
-<a class="button" href="https://youtube.com/@theunshaken" target="_blank">🎬 Watch on YouTube</a>
-<a class="button" href="https://open.spotify.com/artist/yourlink" target="_blank">🎧 Listen on Spotify</a>
+<a href="porch.html" class="button">🚪 Step Onto the Porch</a>
 
-<!-- JOURNEY -->
+<p class="subtle">Best experienced in order.</p>
+
+<a href="https://youtube.com/@theunshaken" target="_blank" class="button">🎬 Watch on YouTube</a>
+<a href="https://open.spotify.com/artist/7hlhX325XoeAKT9bwXxAW8" target="_blank" class="button">🎧 Listen on Spotify</a>
+
+<!-- NEW BIO BUTTON -->
+<a href="bio.html" class="button">🪶 Read the Story</a>
+
 <h2 class="section-title">Begin the Journey</h2>
 
-<a href="porch.html" class="card" style="display:block; text-decoration:none; color:inherit;">
-    <div class="album">
-        <img src="theoldriversessions.png">
-    </div>
-
-    <p class="album-desc">
+<div class="card">
+    <a href="porch.html">
+        <img src="theoldriversessions.png" alt="The Old River Sessions">
+    </a>
+    <p>
         The Old River Sessions — a quiet front porch, a worn guitar, and stories carried on the current.
     </p>
+    <p class="subtle">Tap the image to step onto the porch.</p>
+</div>
 
-    <p class="helper">Tap the image to step onto the porch.</p>
-</a>
-
-<!-- ALT WORLDS -->
 <h2 class="section-title">Or take a different road</h2>
 
-<div class="card">
-    <h3>The Pub</h3>
-    <p>Raised voices, clinking glasses, and songs that don’t sit still.</p>
-    <a class="button" href="pub.html">🍻 Join the Noise</a>
-</div>
-
-<div class="card">
-    <h3>The Cathedral</h3>
-    <p>Darker roads, heavier questions, and something echoing in the distance.</p>
-    <a class="button" href="cathedral.html">⛪ Step Inside</a>
-</div>
-
-<p class="footer">© 2026 The Unshaken</p>
+<a href="pub.html" class="button">🍻 The Pub</a>
+<a href="cathedral.html" class="button">🕯️ The Cathedral</a>
 
 </div>
+
 </body>
 </html>
